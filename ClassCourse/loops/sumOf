@@ -1,0 +1,16 @@
+# user will input a number
+in_put = int(input("enter a number"))
+
+tableNum = 1
+y =0 
+
+
+while tableNum < 11:
+    x = tableNum * in_put
+    print(x)
+    tableNum += 1
+    y += x
+
+   
+
+print(y)

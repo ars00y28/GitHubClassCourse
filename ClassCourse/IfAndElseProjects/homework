@@ -1,0 +1,395 @@
+angle = float(input("enter the angle"))
+
+if angle == 90:
+    print("right angle ")
+elif angle <90 and angle >0:
+    print("acute angle")
+elif angle >90 and angle<180:
+    print ("obtuse angle ")
+elif angle > 180 and angle <360:
+    print("reflex angle")
+else:
+    pass
+
+
+    ##program 2##########
+
+    subjectOne = float(input("enter the marks for subject one "))
+subjectTwo = float(input("enter the marks for subject two"))
+subjectThree = float(input("enter the marks for subject three "))
+subjectFour = float(input("enter the marks for subject four "))
+subjectFive = float(input("enter the marks for subject five "))
+subjectSix = float(input("enter the marks for subject six "))
+subjectSeven = float(input("enter the marks for subject seven "))
+subjectEight = float(input("enter the marks for subject eight"))
+
+average = (subjectOne+subjectTwo+subjectThree+subjectFour+subjectFive+subjectSix+subjectSeven+subjectEight)/8
+
+print(f"your average marks for the term is {average} percent")
+
+##########program 3######################
+
+HeightInMeter = float(input("enter your height in meters"))
+WeightInKilograms = float(input("enter your weight in kilograms"))
+
+x = HeightInMeter*HeightInMeter
+bmi = WeightInKilograms/x
+
+print(bmi)
+
+if bmi < 18.5:
+    print(f"your bmi is:{bmi} you are underweight")
+elif bmi >=18.5 and bmi<=24.4:
+    print(f"your bmi is:{bmi}your weight is normal!!!")
+elif bmi >=25 and bmi <=29.9:
+    print(f"your bmi is:{bmi}you are overweight")
+else:
+    print(f"your bmi is:{bmi}you are obsese")
+
+    #####################program 4##############################
+    temperature = float(input("enter the temperature of the water:"))
+
+if temperature >= 100:
+    print("water is boiling")
+else:
+    print("water is not boiling")
+
+    ###################program 5###############################
+    char = input("enter characters")
+
+if char.isupper():
+    print(char.lower())
+elif char.islower():
+    print(char.upper())
+else:
+    print("error")
+ ###########################program 6################################
+
+ import  random
+
+playerOne = input("enter the name of player one: ")
+playerTwo = input("enter the name of player two: ")
+playerThree = input("enter the name of player three: ")
+playerFour = input("enter the name of player four: ")
+playerFive = input("enter the name of player five: ")
+
+list = [playerOne,playerTwo,playerThree,playerFour,playerFive]
+
+killer = random.choice(list)
+
+
+guess = (input("guess the killer "))
+
+if guess == killer:
+     print("you have solved the crime detective")
+elif guess != killer:
+    guess = (input("guess the killer "))
+    if guess == killer:
+        print("you have solved the crime detective")
+    elif guess != killer:
+        guess = (input("guess the killer "))
+        if guess == killer:
+            print("you have solved the crime detective")
+        elif guess != killer:
+            guess = (input("guess the killer "))
+            if guess == killer:
+                print("finally you have solved the crime detective")
+            elif guess !=killer:
+                print(f"you have failed the killer was {killer} now you must die ")
+
+###########################program 7################################
+
+price = float(input("enter the price"))
+dicount = 0
+
+if price >=1000 and price <5000:
+    discount = (10/100)*price
+    print(f"you get discount{discount}rupees")
+elif price >=5000 and price <10000:
+    discount = (15/100)*price
+    print(f"you get discount{discount}rupees")
+elif price >=10000:
+    discount = (30/100)*price
+    print(f"you get discount{discount}rupees")
+else:
+    print("you get no discount ")
+
+
+###########################program 8################################
+
+numOne = int(input("enter first number"))
+numTwo = int(input("enter second number"))
+
+if numOne > numTwo:
+    print(numOne,"is greater number")
+else:
+    print(numTwo,"is greater number")
+
+ ###########################program 9################################
+
+        trigger = False
+threshold = 90.0
+
+temperature = float(input("enter the temperature"))
+
+if temperature >= threshold:
+    trigger = True
+    print(f"the state of fire alarm is on: {trigger}")
+else:
+    print(f"the state of fire alarm is on: {trigger}")
+
+ ###########################program 10################################
+
+ import random
+sides = ['left', 'right', 'middle']
+x = 0
+gk = random.choice(sides)
+shooting = input("Which side do you want to shoot? left, right or middle? ")
+while x<=0:
+    if shooting == gk:
+        print("Penalty Saved!")
+        x = 1
+    else:
+        print("Penalty Scored!")
+        x = 1
+
+ ###########################program 11################################
+ grade = int(input("enter your grade"))
+
+if grade >=90 and grade <=100:
+    print("a+")
+elif grade >=80 and grade <90:
+    print("a")
+elif grade >=70 and grade <80:
+    print("b+")
+elif grade >= 60 and grade<70:
+    print("b")
+elif grade >=50 and grade <60:
+    print("c+")
+elif grade >=40 and grade<50:
+    print("c")
+else:
+    print("fail")
+
+ ###########################program 12################################
+
+ import random
+
+x =1
+while x!=0:
+     RandomNumber = random.randint(0, 100)
+
+     print(RandomNumber)
+     guess = int(input("square of given number is: "))
+
+     if guess == RandomNumber * RandomNumber:
+            print("you are correct!!!!")
+     else:
+            print("you are wrong try again!!!")
+            x = 0
+
+ ###########################program 13################################
+
+                        import random
+
+RanNum = random.randint(0,100)
+
+
+guess = int(input("guess the number"))
+x = 1
+while x!=0:
+    if guess == RanNum:
+        print("congrats you have guessed the number!!!!")
+        x=0
+    elif guess < RanNum:
+        print("you guessed low")
+        guess = int(input("guess the number"))
+    elif guess > RanNum:
+        print("you guessed high")
+        guess = int(input("guess the number"))
+    else:
+        pass
+
+  ###########################program 14################################
+
+  num = int(input("enter a number"))
+
+print("the last digit of the number you entered is:",num%10)
+
+###########################program 15################################
+
+age = int(input("enter your age"))
+
+if age <18:
+    print("you are underage for driving")
+    print("you are underage for voting")
+    print("you are underage for alcohol")
+elif age >=18 and age < 21:
+    print("you are old enough for driving")
+    print("you are old enough for voting")
+    print("you are old enough for drinking alcohol")
+elif age >=21:
+    print("you are old enough for marriage")
+    print("you are old enough for driving big vechicles")
+else:
+    pass
+
+ ###########################program 16################################
+
+
+
+
+num = int(input("enter "))
+
+if num == 1:
+    print("january")
+elif num ==2:
+    print("february")
+elif num == 3:
+    print("march")
+elif num == 4:
+    print("april")
+elif num == 5:
+    print("may")
+elif num == 6:
+    print("june")
+elif num == 7:
+    print("july")
+elif num == 8:
+    print("august")
+elif num == 9:
+    print("september")
+elif num == 10:
+    print("october")
+elif num == 11:
+    print("november")
+elif num == 12:
+    print("december")
+
+
+###########################program 17################################
+
+x = 1
+
+while x !=0:
+    num = int(input("enter a positive or negative number"))
+    if num <0:
+        print("negative number")
+    elif num >=0:
+        print("positive number")
+    else:
+        x = 0
+        print("error")
+ ###########################program 18################################
+
+ num = int(input("enter a number"))
+
+if num%2 == 0:
+    print("the number is even")
+else:
+    print("the number is odd")
+   ###########################program 19################################
+
+   NoOfWins = int(input("enter number of your wins"))
+penalty = 0
+
+if NoOfWins == 0:
+    penalty = 0
+    print(f"your penalty weight is:{penalty}kg")
+elif NoOfWins >0 and NoOfWins <=2:
+    penalty = 2
+    print(f"your penalty weight is: {penalty}kg")
+elif NoOfWins >2 and NoOfWins <=5:
+    penalty = 5
+    print(f"your penalty weight is: {penalty}kg")
+elif NoOfWins >5:
+    penalty = 7
+    print(f"your penalty weight is: {penalty}kg")
+else:
+    print("error")
+
+  ###########################program 20################################
+
+  print("set the code between 1000 to 9999")
+
+SetCode = int(input("set your  code "))
+
+if SetCode > 9999 or SetCode < 1000:
+    print("error")
+else:
+    pass
+
+TryCode = int(input("enter the code"))
+
+if TryCode == SetCode:
+    print("access allowed")
+else:
+    print("access denied")
+  ###########################program 21################################
+
+  age = int(input("enter your age"))
+
+if age >=60:
+    print("you are a senior citizen")
+else:
+    print("you are not a senior citizen")
+ ###########################program 22################################
+
+ char = input("enter a character")
+
+if char.isupper():
+    print(char,"is upper case")
+elif char.islower():
+    print(char,"is lower case")
+else:
+    pass
+
+###########################program 23################################
+
+age = int(input("enter your age"))
+
+if age<18:
+    print("sorry  you can not vote!!!")
+else:
+    print("congrats you can vote!!!")
+
+ ###########################program 24################################
+ x = 1
+
+while x !=0:
+    vowel = 'aeiouAEIOU'
+    char = input("enter a character")
+    if char in vowel:
+        print(char,"is a vowel")
+    else:
+        print(char,"is not a vowel")
+
+  ###########################program 25################################
+  weather = input("enter the weather condition from rainy, sunny and cloudy: ")
+
+if weather == 'rainy':
+    print("dont forget to take umbrella with ya!!")
+    print("a cup of soup sounds amazing!")
+elif weather == 'sunny':
+    print("dont forget to wear sunscreem!!")
+    print("GGGreat weather for swimming isn't??!!!!")
+elif weather == 'cloudy':
+    print("good weather for working ")
+    print("feels like sleeping zzz")
+else:
+    print("error try again")
+
+    ################################program 26################
+    ageOne = int(input("enter the first age"))
+ageTwo = int(input("enter the second age"))
+ageThree = int(input("enter the third age"))
+ageFour = int(input("enter the fourth age"))
+
+if ageOne <ageTwo and ageOne <ageThree and ageOne <ageFour:
+    print(ageOne," years is the youngest")
+elif ageTwo <ageOne and ageTwo <ageThree and ageTwo <ageFour:
+    print(ageTwo,"years is the youngest")
+elif ageThree <ageOne and ageThree <ageTwo and ageThree <ageFour:
+    print(ageThree,"years is the youngest")
+else:
+    print(ageFour,"years is the youngest")
